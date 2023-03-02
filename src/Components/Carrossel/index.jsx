@@ -77,8 +77,8 @@ export default function SliderComponent() {
       <SwiperSlide><img className="primary" src={Perfil4} />
       <img className="secundary1" src={Image13} />
       <img  className="secundary2" src={Image14}/>
-      <img className="tertiary1" src={Image15} />
-      <img  className="tertiary2" src={Image16}/></SwiperSlide>
+      <img className="tertiary1" src={Image16} />
+      <img  className="tertiary2" src={Image15}/></SwiperSlide>
         
         
       </Swiper>
