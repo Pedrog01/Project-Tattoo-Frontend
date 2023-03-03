@@ -13,7 +13,7 @@ export default function Form() {
         <h1>Faça seu login como:</h1>
       </div>
 
-      <Link to="/singInAdmin" className="models">
+      <Link to="/signin" className="models">
         <div className="tatoon">
           <h1 className="formu">Tatuador</h1>
 
@@ -28,7 +28,7 @@ export default function Form() {
         </div>
       </Link>
 
-      <Link to="/singInUser" className="models">
+      <Link to="/signin" className="models">
         <div className="client">
           <h1 className="formu"> Cliente </h1>
 
