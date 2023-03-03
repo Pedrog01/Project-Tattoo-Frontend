@@ -7,7 +7,7 @@ import Hand from "../../stylesheet/assents/Mao.png";
 import Machine from "../../stylesheet/assents/Machine.png";
 import Dragon from "../../stylesheet/assents/Dragon.png";
 import Back from "../../stylesheet/assents/Background.png";
-import Footer from "../../Components/footer"
+import Footer from "../../Components/Footer/index"
 
 export default function Form() {
   return (

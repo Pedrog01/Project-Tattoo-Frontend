@@ -1,18 +1,20 @@
 import React from 'react';
 import {BrowserRouter as Router,Route, Routes,} from 'react-router-dom';
 
-import SignUp from '../Pages/SignUp';
+import SignIn from '../Pages/signIn';
 import Choice from '../Pages/choiceUser';
-import SignUpUser from '../Pages/SingUpUser/index';
+import SignUp from '../Pages/singUp';
+import HomePage from '../Pages/HomePage/index'
 
 const RouterApp = () => {
   
   return (
     <Router>
       <Routes>
-        <Route path='/signup'element={<SignUp/>}/>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/signin'element={<SignIn/>}/>
         <Route path="/choiceUser" element={ <Choice/> }/>
-        <Route path='/signupUser' element={<SignUpUser/>} /> 
+        <Route path='/signup' element={<SignUp/>} /> 
       </Routes>
     </Router>
   
