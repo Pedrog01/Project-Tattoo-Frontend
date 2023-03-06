@@ -3,6 +3,8 @@ import connection from "../../Api/connection";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
+import 'react-toastify/dist/ReactToastify.css';
+
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,10 +17,10 @@ const SignIn = () => {
       const response = await connection.post("/auth/sign_in", { email, password });
        console.log(response)
        navigate('/')
+       toast.success("logged in user!")
     } catch (error) {
       toast.error("Incorrect email or password!");
     }
-
   };
 
   return (
