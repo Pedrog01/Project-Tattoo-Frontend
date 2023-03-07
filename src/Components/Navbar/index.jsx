@@ -1,8 +1,10 @@
-import React from "react";
-import "./style.scss";
+import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-export default function Navbar() {
+import "./style.scss";
+import Perfil from "../../stylesheet/assents/perfil.jpg";
+
+const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -24,16 +26,18 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-800 py-3 w-screen h-28">
       <div className="container mx-auto flex items-center justify-between">
-        <img src="logo.png" alt="Logo" className="h-8" />
-        <div className="flex">
-        <a
-            href="/home"
+        <div className=" px-4 py-3 text-sm text-white dark:text-white font-medium ">
+
+          name@flowbite.com
+        </div>
+        <div className="flex space-x-4">
+          <a
+            href="/"
             className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded hover:text-white"
           >
             Home
-          </a>   
-        <button
-        
+          </a>
+          <button
             className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded hover:text-white"
             onClick={scrollToSobreNos}
           >
@@ -45,8 +49,11 @@ export default function Navbar() {
           >
             Login
           </a>
+          <div></div>
         </div>
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;

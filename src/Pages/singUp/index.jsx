@@ -33,7 +33,7 @@ const SignUp = () => {
       });
       console.log(response);
       toast.success("registered user!!")
-      navigate('/sign_in')
+      navigate('/signin')
     } catch (error) {
       console.log(error)
       navigate('/');
@@ -44,11 +44,11 @@ const SignUp = () => {
     <div className="container">
       <div className="min-h-screen bg-stone-900 py-6 flex flex-col justify-center sm:py-12  w-screen h-screen ">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto h-screen w-screen">
-          <div className="relative px-4 py-10 bg-slate-100 mx-8 md:mx-0 shadow rounded-xl sm:p-10 bg-slate  ">
+          <div className="relative px-4 py-10 bg-slate-100 mx-8 md:mx-0 shadow rounded-xl sm:p-10 bg-slate">
             <div className="max-w-md mx-auto">
               <div className="flex items-center space-x-5 px-4 py-2 border:none focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm rounded-md focus:outline-none ">
                 <div className="text-center block pl-2 font-semibold text-xl self-start text-gray-700">
-                  <h2 className="leading-relaxed font-bold text-black text-4xl text-center ">
+                  <h2 className="flex flex-col items-center justify-center px-28 py-8 mx-auto lg:py-0 ">
                     Sing Up
                   </h2>
                 </div>

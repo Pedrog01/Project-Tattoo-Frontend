@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@632&display=swap');
 
-body{
-  background-color: #0c0c0c;
-}
 .body {
   margin: 0;
   padding: 0;
-  height: "5000px";
-  width: 188vh;
+  height: "500px";
+  width: 194vh;
   height: 100vh;
   overflow-y: auto; /* adiciona a opção de rolar para cima e para baixo */
   overflow-x: hidden; /* tira opção de rolar para os lados */
@@ -35,8 +33,8 @@ h1, h2 {
 
 p {
   color: rgb(0, 0, 0);
-  -webkit-text-stroke: 0.3px rgb(29, 29, 29);
-  font-family: 'Permanent Marker', cursive;
+  -webkit-text-stroke: 0.2px rgb(29, 29, 29);
+  font-family: 'Montserrat';
 }
 
 header {
@@ -55,19 +53,13 @@ header {
 }
 
 .slide-title{
-
   font-size: 2.3em;
   color: #000000;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
-
 }
 
 #fav{
-
-
-  color: #ff4800;
-  -webkit-text-stroke: 1.0px rgb(0, 0, 0);
-
+  color: #000000;
 }
 
 .slids {
@@ -93,7 +85,7 @@ header {
 .block1{
 background-color: #e0e0e0;
 position: relative;
-top: 700px;
+top: 620px;
 
 }
 .block2{
@@ -106,25 +98,22 @@ top: 700px;
 .text {
   position: relative;
   width: 52vh;
-top: -70px;
+  top: 11px;
 
   h1 {
     text-align: center;
-      color: #150072;
-    z-index: 9999;
-
+    color: #150072;
     font-size: 3em;
   }
   p {
     text-align: center;
-    z-index: 9999;
+    top: 20px;
     font-size: 1.5em;
-
   }
 
   .img1 {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 670px;
     width: 350px;
     height: 350px;
@@ -154,9 +143,6 @@ top: -70px;
   -webkit-text-stroke: 0.7px rgb(0, 38, 255);
 }
 
-
-
-
 .button:hover {
   animation: Button 100s infinite;
 }
@@ -171,8 +157,6 @@ top: -70px;
   1% {
     transform: scale(1.1);
     background-color: #ffffff;
-    color: #ff4800;
-    -webkit-text-stroke: 1.5px rgb(212, 0, 0);
     border: 4px solid rgb(0, 0, 0);
     z-index: 9900;
   }
@@ -186,17 +170,18 @@ top: -70px;
 
 footer{
   position: relative;
-  left: -340px;
-  top: 100px;
-
+  left: -650px;
+  right: auto;
+  top: 90px;
   height: 150px;
+  
   p{
     color: #c2c2c2;
-    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    font-family: 'Montserrat'
   }
   p:hover{
     color: #ffffff;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    
   }
 
 }
