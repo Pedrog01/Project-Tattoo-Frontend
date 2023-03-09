@@ -4,10 +4,8 @@ import "./style.scss";
 
 export default function Form() {
   return (
-    <div className="body">
+    <div className="form">
       <div className="image"></div>
-
-      <header></header>
 
       <div className="title">
         <h1>Faça seu login como:</h1>

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 import "./style.scss";
-import Perfil from "../../stylesheet/assents/perfil.jpg";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
 
   // função para rolar até a seção "Sobre Nós"
   const scrollToSobreNos = () => {
@@ -27,8 +27,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 py-3 w-screen h-28">
       <div className="container mx-auto flex items-center justify-between">
         <div className=" px-4 py-3 text-sm text-white dark:text-white font-medium ">
-
-          name@flowbite.com
+          name@gmail.com
         </div>
         <div className="flex space-x-4">
           <a
@@ -49,7 +48,6 @@ const Navbar = () => {
           >
             Login
           </a>
-          <div></div>
         </div>
       </div>
     </nav>

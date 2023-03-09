@@ -4,6 +4,6 @@ import './index.css'
 
 import RouterApp from './Routes';
 
-const App = () => <> <ToastContainer/> ,<RouterApp/> </>
+const App = () => <><ToastContainer/><RouterApp/></>
 
 export default App;
