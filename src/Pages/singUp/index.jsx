@@ -36,7 +36,7 @@ const SignUp = () => {
       navigate('/signin')
     } catch (error) {
       console.log(error)
-      navigate('/');
+      toast.error('some field is empty!')
     }
   };
 

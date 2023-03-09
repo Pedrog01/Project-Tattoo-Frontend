@@ -16,7 +16,7 @@ const SignIn = () => {
     try {
       const response = await connection.post("/auth/sign_in", { email, password });
        console.log(response)
-       navigate('/posts')
+       navigate('/jobs')
        toast.success("logged in user!")
     } catch (error) {
       toast.error("Incorrect email or password!");
@@ -27,7 +27,7 @@ const SignIn = () => {
     <div className="flex items-center min-h-screen bg-zinc-900"> 
       <div class="px-8 py-6 mx-10 mt-4 text-left bg-white rounded-md shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
       <h1 className=" flex justify-center ">
-        <p className="font-Montserrat text-md text-[#1b0096]">Login</p>
+        <p className="font-Montserrat text-md text-[#2b00ff]">Login</p>
         </h1>
         <div className="form-data">
           <div class="mt-4">
@@ -74,7 +74,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
-      <div className="img px-2">
+      <div className="img">
         <img className="h-25 w-55" src="https://files.tecnoblog.net/wp-content/uploads/2021/08/tatuagem-apps-1.jpg" alt="tattoReal"></img>
       </div>
     </div>
