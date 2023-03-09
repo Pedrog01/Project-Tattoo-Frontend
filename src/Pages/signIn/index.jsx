@@ -16,7 +16,7 @@ const SignIn = () => {
     try {
       const response = await connection.post("/auth/sign_in", { email, password });
        console.log(response)
-       navigate('/jobs')
+       navigate('/profileuser')
        toast.success("logged in user!")
     } catch (error) {
       toast.error("Incorrect email or password!");

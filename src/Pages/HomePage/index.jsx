@@ -9,9 +9,9 @@ import Dragon from "../../stylesheet/assents/Dragon.png";
 import Back from "../../stylesheet/assents/Background.png";
 import Footer from "../../Components/Footer/index";
 
-export default function Form() {
+export default function Home() {
   return (
-    <div className="body">
+    <div className="container-home">
       {/* <img className="back" src={Back} /> */}
       <header id="topo">
         <Navbar />

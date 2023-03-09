@@ -4,7 +4,7 @@ import "./style.scss";
 
 export default function Form() {
   return (
-    <div className="form">
+    <div className="choice">
       <div className="image"></div>
 
       <div className="title">

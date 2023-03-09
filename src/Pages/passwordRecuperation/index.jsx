@@ -10,7 +10,7 @@ const passwordRecuperation = () => {
   // const [success, setSuccess] = useState(false)
 
   return (
-    <div className="container">
+    <div className="all-center">
       <div className="min-h-screen bg-black py-6 flex flex-col justify-center sm:py-12 w-screen h-screen">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
           <div className="relative px-4 py-10 bg-slate-100 mx-8 md:mx-0 shadow rounded-md sm:p-10 bg-slate">

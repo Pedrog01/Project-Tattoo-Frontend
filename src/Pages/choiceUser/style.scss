@@ -1,8 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000000;
   position: fixed;
+}
+
+.choice {
+  background-color: #111111;
+  min-height: 100vh;
+  min-width: 200vh;
 }
 
 .image {

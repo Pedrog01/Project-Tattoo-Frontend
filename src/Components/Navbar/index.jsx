@@ -25,10 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 py-3 w-screen h-28">
-      <div className="container mx-auto flex items-center justify-between">
-        <div className=" px-4 py-3 text-sm text-white dark:text-white font-medium ">
-          name@gmail.com
-        </div>
+      <div className="container mx-auto flex items-center justify-center">
         <div className="flex space-x-4">
           <a
             href="/"
@@ -50,6 +47,9 @@ const Navbar = () => {
           </a>
         </div>
       </div>
+      <div className=" flex justify-end p-8 py-2 text-sm text-white dark:text-white font-medium ">
+          name@gmail.com
+        </div>
     </nav>
   );
 };

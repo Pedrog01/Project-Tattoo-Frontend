@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@632&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@632&display=swap');
 
-.body {
+.container-home {
   margin: 0;
   padding: 0;
   height: "500px";
@@ -11,14 +11,14 @@
   overflow-x: hidden; /* tira opção de rolar para os lados */
   background-color: #ffffff;
 
-.body h1 {
+.container-home h1 {
     color: #000000;
     font-family: "Julee", cursive;
     -webkit-text-stroke: 0.5px rgb(0, 0, 0);
     font-size: 2em;
 }
 
-.body h2 {
+.container-home h2 {
   color: #000000;
   font-family: "Julee", cursive;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);

@@ -41,7 +41,6 @@ const SignUp = () => {
   };
 
   return (
-    <div className="container">
       <div className="min-h-screen bg-stone-900 py-6 flex flex-col justify-center sm:py-12  w-screen h-screen ">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto h-screen w-screen">
           <div className="relative px-4 py-10 bg-slate-100 mx-8 md:mx-0 shadow rounded-xl sm:p-10 bg-slate">
@@ -176,7 +175,6 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

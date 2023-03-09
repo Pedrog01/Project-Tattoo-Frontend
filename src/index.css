@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.all-center {
+  @apply justify-center items-center flex
+}
+
+.corner {
+  @apply justify-center items-center px-10 p-44
+}

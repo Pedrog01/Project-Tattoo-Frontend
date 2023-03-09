@@ -7,6 +7,8 @@ import SignUp from '../Pages/singUp';
 import HomePage from '../Pages/HomePage/index'
 import PasswordRecuperation from '../Pages/passwordRecuperation';
 import Jobs from '../Pages/jobs/index'
+import ProfileUser from '../Pages/profileUser';
+
 
 const RouterApp = () => {
   
@@ -19,6 +21,7 @@ const RouterApp = () => {
         <Route path='/signup' element={<SignUp/>} /> 
         <Route path='/passwordRecuperation' element={<PasswordRecuperation/>} />
         <Route path='/jobs' element={<Jobs/>} />
+        <Route path='/profileuser' element={<ProfileUser/>} />
       </Routes>
     </Router>
   
