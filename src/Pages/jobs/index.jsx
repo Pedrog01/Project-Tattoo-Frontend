@@ -1,12 +1,38 @@
-import React, { useState, useEffect } from "react";
-import "./style.scss";
+import { useState } from 'react';
+import "./style.scss"
+import axios from 'axios';
 
-const Jobs = () => {
+function MyForm() {
+  const [image, setImage] = useState(null);
+
+  function handleFileChange(event) {
+    const file = event.target.files[0];
+    setImage(file);
+  }
+    // Enviar o formData para o servidor
+
   return (
-    <div id="container10">
-        <h1>Find the best studio:</h1>
-      </div>
+    <form onSubmit={handleSubmit}>
+      <input type="file" onChange={handleFileChange} />
+      <button type="submit">Enviar</button>
+    </form>
   );
-};
 
-export default Jobs;
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(image)
+  
+    const formData = new FormData();
+    formData.append('image', image);
+  
+    axios.post('http://localhost:3000/jobs_path', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    }).then(response => {
+      console.log(response.data);
+    });
+  }
+}
+  
+  export default MyForm
